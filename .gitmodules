@@ -1,0 +1,3 @@
+[submodule "sick_safetyscanners"]
+	path = sick_safetyscanners
+	url = https://github.com/prachandabhanu/sick_safetyscanners.git
