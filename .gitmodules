@@ -1,3 +1,6 @@
 [submodule "sick_safetyscanners"]
 	path = sick_safetyscanners
 	url = https://github.com/prachandabhanu/sick_safetyscanners.git
+[submodule "ira_laser_tools"]
+	path = ira_laser_tools
+	url = https://github.com/iralabdisco/ira_laser_tools.git
