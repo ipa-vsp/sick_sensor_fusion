@@ -39,6 +39,11 @@ RUN apt-get update && apt-get install -y \
 && rm -rf /var/lib/apt/lists/* \
 && apt-get clean
 
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+        git clang gdb gdbserver\
+&& rm -rf /var/lib/apt/lists/* \
+&& apt-get clean
+
 # Create the 'admin' user if not already exists
 RUN if [ ! $(getent passwd ${USERNAME}) ]; then \
         groupadd --gid ${USER_GID} ${USERNAME} ; \
